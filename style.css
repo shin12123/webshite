@@ -1010,3 +1010,76 @@ html {
     line-height: 1.6;
     color: var(--text-muted);
 }
+/* -----------------------------------------------------------------
+   EXTRA SMALL SCREEN ADAPTATION (≤ 576 px)
+   ----------------------------------------------------------------- */
+   @media (max-width: 576px) {
+
+    /* Базова типографіка та відступи */
+    body { font-size: 14px; }
+    .container { padding: 0 10px; }
+
+    /* Шапка */
+    .top-header, .main-header { padding: 8px 0; }
+    .header-content { flex-direction: column; gap: 8px; }
+    .logo-text { font-size: 18px; }
+
+    /* Навігація — переносимо пункти в стовпчик і обрізаємо падінги */
+    .nav-menu ul { flex-direction: column; align-items: flex-start; }
+    .nav-menu li { margin: 0; width: 100%; }
+    .nav-menu a { padding: 10px 12px; font-size: 15px; text-align: left; }
+    /* випадайки відображаються статично під батьківським пунктом */
+    .dropdown-content { position: static; box-shadow: none; padding-left: 15px; }
+
+    /* Hero */
+    .hero { flex-direction: column; height: auto; }
+    .hero-content { width: 100%; padding: 40px 20px; text-align: center; }
+    .hero-image { display: none; }     /* ховаємо велику картинку */
+
+    .hero h1   { font-size: 32px; }
+    .hero p    { font-size: 16px; }
+
+    /* Блоки «Feature» */
+    .features { padding: 60px 0; }
+    .feature-item  { width: 100%; margin-bottom: 30px; }
+    .feature-title { font-size: 16px; }
+    .feature-icon  { font-size: 30px; }
+
+    /* Контентні секції */
+    .about, .activities, .company-info, .news {
+        padding: 60px 0;
+    }
+    .section-header h2 { font-size: 28px; }
+
+    /* Сітка новин та карток */
+    .news-item, .footer-column { width: 100% !important; }
+
+    /* Форма на сторінці «Контакти» */
+    form input, form textarea {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+}
+
+/* -----------------------------------------------------------------
+   VERY SMALL SCREEN ADAPTATION (≤ 400 px)
+   ----------------------------------------------------------------- */
+@media (max-width: 400px) {
+
+    /* Зменшуємо розміри шрифту та відступи ще сильніше */
+    body        { font-size: 13px; }
+    .btn-primary{ padding: 10px 24px; font-size: 13px; }
+
+    /* Хедлайни */
+    .hero h1            { font-size: 26px; }
+    .section-header h2  { font-size: 24px; }
+
+    /* Таб‑кнопки (normative‑docs) */
+    .tab-btn { padding: 10px 18px; font-size: 15px; }
+
+    /* Стилізація маркерів списків (щоб не зливались з текстом) */
+    .item-marker, .doc-marker { width: 8px; height: 8px; }
+
+    /* Звужуємо поля форми */
+    .info-list li { font-size: 14px; }
+}
