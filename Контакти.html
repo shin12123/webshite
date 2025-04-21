@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакти – ТОВ "СД ТРЕЙДИНГ"</title>
+    <!-- Основні стилі сайту -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome для іконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="container">
+            <span class="date"><!-- JS вставить дату --></span>
+            <button class="btn" onclick="window.location='Контакти.html'">Зв’язатися з нами</button>
+        </div>
+    </header>
+
+       <!-- Main Header -->
+       <div class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <div class="logo-text">ТОВ "СД ТРЕЙДИНГ"</div>
+                </div>
+              
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Navigation -->
+    <nav class="nav-menu">
+        <div class="container">
+            <ul>
+                <li><a href="Головна.html">Головна</a></li>
+                <li class="dropdown">
+                    <a href="#">Споживачам електричної енергії</a>
+                    <div class="dropdown-content">
+                        <a href="ПОСТАЧАННЯ ЕЛЕКТРИЧНОЇ ЕНЕРГІЇ.html">ПОСТАЧАННЯ ЕЛЕКТРИЧНОЇ ЕНЕРГІЇ</a>
+                        <a href="Нормативні документи.html#electricity">Нормативні документи (Електрика)</a>
+                        <a href="Зверненя споживачів.html">Зверненя споживачів</a>
+                        <a href="Електробезпека.html">Електробезпека</a>
+                    </div>
+                </li>
+                <li><a href="Нормативні документи.html">Нормативні документи</a></li>
+                <li class="dropdown">
+                    <a href="#">Споживачам природного газу</a>
+                    <div class="dropdown-content">
+                        <a href="Загальні умови постачання природного газу.html">Загальні умови постачання природного газу</a>
+                        <a href="Нормативні документи.html#gas">Нормативні документи (Газ)</a>
+                        <a href="https://www.dropbox.com/scl/fi/y2skr5cqv2uw4tfcz8aty/_-_-_-_-_-1.pdf?rlkey=f0uvdjx2hbrt6gmnakfx0kg8d&e=1&dl=0">Права та обов'язки постачальника і споживача</a>
+                        <a href="https://docs.google.com/document/d/1Q5EDtDAbio9xxLHJuH9ZW2icRQAlpd6a1iHmaYI5HKM/edit?pli=1&tab=t.0">Договір постачання природного газу</a>
+                        <a href="ВИРІШЕННЯ СПОРІВ.html">Вирішення спорів</a>
+                    </div>
+                </li>
+                <li><a href="#" class="active">Контакти</a></li>
+            </ul>
+        </div>
+    </nav>
+
+  
+
+        <!-- Contact Details & Form -->
+        <section class="company-info" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Контакти</h2>
+                </div>
+
+                <div style="display: flex; flex-wrap: wrap; gap: 40px;">
+                    <!-- Details -->
+                    <div style="flex: 1 1 320px;">
+                        <ul class="info-list">
+                            <li class="info-item"><strong><i class="fas fa-envelope"></i> E‑mail:</strong> sdtrading.officellc@gmail.com</li>
+                            <li class="info-item"><strong><i class="fas fa-map-marker-alt"></i> Адреса:</strong> Україна, 04060, м. Київ, вул. Ризька, буд. 73‑Г, офіс 7</li>
+                            <li class="info-item"><strong><i class="fas fa-phone"></i> Телефон:</strong> +380 99 437 2905</li>
+                            <li class="info-item"><strong><i class="fas fa-clock"></i> Графік роботи:</strong><br/> пн‑пт 09:00–18:30<br/> сб‑нд — вихідні</li>
+                        </ul>
+                    </div>
+
+                    <!-- Form -->
+                    <div style="flex: 1 1 320px;">
+                        <form action="https://formspree.io/f/yourFormID" method="POST" style="display:flex; flex-direction:column; gap:15px;">
+                            <input type="text" name="name" placeholder="Ваше ім’я" required style="padding:12px; background:var(--dark-bg); color:var(--text-light); border:1px solid var(--border-color);" />
+                            <input type="email" name="email" placeholder="E‑mail" required style="padding:12px; background:var(--dark-bg); color:var(--text-light); border:1px solid var(--border-color);" />
+                            <input type="text" name="subject" placeholder="Тема" style="padding:12px; background:var(--dark-bg); color:var(--text-light); border:1px solid var(--border-color);" />
+                            <textarea name="message" rows="6" placeholder="Ваше повідомлення" required style="padding:12px; background:var(--dark-bg); color:var(--text-light); border:1px solid var(--border-color);"></textarea>
+                            <!-- honeypot -->
+                            <input type="text" name="_gotcha" style="display:none" />
+                            <button type="submit" class="btn-primary">Надіслати</button>
+                        </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <main>
+
+        <!-- Map Section -->
+        <section class="about" id="map">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Як нас знайти</h2>
+                </div>
+                <div style="width: 100%; height: 460px; border: 1px solid var(--border-color);">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.480072374427!2d30.430124377057902!3d50.47361598635544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cbe657519c3b%3A0x5b96e65e6a85ee86!2z0LLRg9C70LjRhtGPINCS0LvQsNC70YzQvdC40LrQsCDQmtGA0LDQuNC70L7QsdCwLCA3My3Rgiwg0JrQuNC10LIsIDA0MDYw!5e0!3m2!1suk!2sus!4v1713714220000!5m2!1suk!2sus"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+   <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Компанія</h3>
+                    <ul>
+                        <li><a href="Головна.html">Про нас</a></li>
+                        <li><a href="Головна.html">Види діяльності</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Інформація</h3>
+                    <ul>
+                        <li><a href="Нормативні документи.html">Нормативні документи</a></li>
+                        <li><a href="Контакти.html">Контакти</a></li>
+                    </ul>
+                </div>
+               
+            <div class="copyright">
+                © 2023 ТОВ "СД ТРЕЙДИНГ". Всі права захищені.
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Показ сьогоднішньої дати у Top Header
+        document.querySelector('.date').textContent = new Date().toLocaleDateString('uk-UA', {
+            weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+        });
+    </script>
+</body>
+</html>
